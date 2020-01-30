@@ -19,7 +19,7 @@ html {
 
 body {
   background: #EFF0F4;
-  color: #8b8e94;
+  color:black;
   line-height: 20px;
   font-size: 14px;
   font-family: "Raleway", Arial, sans-serif;
@@ -1443,7 +1443,7 @@ a:hover, a:focus, a:active {
   margin: 0 0 10px 0;
   padding: 0;
   font-size: 20px;
-  color: red;
+  color: black;
 }
 
 .probootstrap-flex-block .probootstrap-text p:last-child {
@@ -2565,7 +2565,7 @@ a:hover, a:focus, a:active {
 
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider .slides > li {
-  height: 700px;
+  height: 400px;
 }
 
 @media screen and (max-width: 480px) {
