@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
+    <title> MLCCC</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <meta name="description" content="mlccc website">
     <meta name="keywords" content="chinese courses, chinese classes, chinese culture,chinese school , chinese camp,">
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -26,10 +29,10 @@
         <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
       </form>
     </div>
-
+    
     <div class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
-
+      
       <div class="probootstrap-header-top">
         <div class="container">
           <div class="row">
@@ -41,7 +44,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
               <ul>
                 <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
                 <li><a href="#"><i class="icon-instagram2"></i></a></li>
                 <li><a href="#"><i class="icon-youtube"></i></a></li>
                 <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
@@ -50,7 +53,8 @@
           </div>
         </div>
       </div>
-<nav class="navbar navred navbar-default probootstrap-navbar">
+      
+     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
             <div class="btn-more js-btn-more visible-xs">
@@ -86,7 +90,7 @@
                     </ul>
                   </li>
                 </ul>     
-              </li>
+              </li>      
               <!--<li><a href="https://mlcccadmin.herokuapp.com/#/registration" target="_blank">Registration</a></li>-->
               <li class="dropdown">
               <a href="history.html" class="dropdown-toggle">About Us</a>
@@ -107,7 +111,7 @@
               <ul class="dropdown-menu">
                   <li><a href="#">Donation</a></li>
                   <li><a href="#">Foundations</a></li>
-              </ul>
+              </ul>      
               </li>
               <li>
                  <a href="https://mlcccadmin.herokuapp.com" target="_blank" >Login</a>
@@ -116,69 +120,99 @@
           </div>
         </div>
       </nav>
-
-  <!--  <section class="probootstrap-section probootstrap-section-colored">
-       <div class="container">
+      
+       <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
           <div class="row">
-            <div class="col-md-12 text-left section-heading probootstrap-animate mb0">
-           <h1>Contact Information</h1>
+            <div class="col-md-12 text-left section-heading probootstrap-animate ctt-container">
+              <h1 class="ctt-item">MLCCC Community</h1>
             </div>
           </div>
         </div>
-      </section>-->
+      </section>
+
       
 
-      <section class="probootstrap-section probootstrap-section-sm">
-        <div class="container">
+<section class="probootstrap-section probootstrap-section-sm">
+        <div id= "tabs" class="container">
           <div class="row">
-           <div class="col-md-12">
-               <h2 class="red">How to find us</h2>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.7933636095427!2d-75.56840788468514!3d40.05771207940844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c68d2e55eacf59%3A0x17274bf2e35b8c8b!2s225+Phoenixville+Pike%2C+Malvern%2C+PA+19355!5e0!3m2!1sen!2sus!4v1542062492450" frameborder="0" style="border:0" width="800" height="400"allowfullscreen></iframe>
-              </div>
-            <div class="col-md-7">
-                  <h2>Get In Touch</h2>
-                  <p>Contact us using the form below.</p>
-                  <form action="#" method="post" class="probootstrap-form">
-                    <div class="form-group">
-                      <label for="name">Full Name</label>
-                      <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                      <label for="subject">Subject</label>
-                      <input type="text" class="form-control" id="subject" name="subject">
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Send Message">
-                    </div>
-                  </form>
+            <div class="col-md-12">
+              <div class="row probootstrap-gutter0">
+                <div class="col-md-3" id="probootstrap-sidebar">
+                  <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
+                    <ul class="probootstrap-side-menu">
+                     <li id="about" class="active showSingle" target="1">Chinese New Year Gala</li>
+                     <li id="member1" class="showSingle" target="2">Clubs</li>
+                      <li id="design" class="showSingle" target="3">Culture Presentation</li>
+                      <li id="design" class="showSingle" target="4">Travel Visa</li>
+                      <li id="design" class="showSingle" target="5">Tutoring</li>
+                      <li id="design" class="showSingle" target="6">Culture Presentation</li>
+                      <li id="design" class="showSingle" target="7">Volunteer</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-          </div>
-
-      </section>
+                
+             <div class="col-md-2 col-md-push-1  probootstrap-animate" id="probootstrap-content"> 
+                <div id="tap2" class="targetDiv" style="display: none">
+                <img src="img/SueC.jpg" alt="">
+                </div>
+                <div id="tap3" class="targetDiv" style="display: none">
+                <img src="img/TerryC.jpg" alt="">
+                </div>
+            </div>
+               
+                 
+<div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+                                         
+ <div id="div1" class="targetDiv">
+    <h2>MLCCC Board of Directors</h2>
+    <p>In November 2008, the MLCCC received a grant from the Shirley and Morrison C. Boyd Fund of The Philadelphia Foundation. Part of the funding has been used to build a formal Board of Directors. The volunteer group represents a number of Greater Philadelphia community members who come from diverse backgrounds but share common excellence in terms of business and academic profiles.
+    </p>
+</div>
+  
+   <div id="div2" class="targetDiv" style="display: none">
+    <h2 class="brname">Sue Cheng</h2>
+     <ul>
+      <li>Founder, ABD International, LLC, an international business development company</li>
+      <li>Owner and President, Easternwise Medical Inc., a global company dedicated to providing World-Class service to hospitals, diagnostic imaging centers and private clinics in the United States and around the world</li>
+      <li>10+ years of experience in IT project management, Software Engineering, Mechanical Engineering at Siemens, Baja Systems and Huazhong Optoelectronic Technology Institute</li>
+      <li>MS in Computer Science, West Chester University of Pennsylvania</li>
+      <li>MS in Mechanical Engineering, University of Massachusetts at Amherst</li>
+      <li>B.S in Mechanical Engineering, Sichuan University</li>          
+    </ul>
+  </div>
+  
+  <div id="div3" class="targetDiv" style="display: none">
+    <h2>Terry Cooke</h2>
+     <ul >
+      <li>Current 2010 Public Policy Scholar with the Woodrow Wilson International Center in Washington DC, researching policy implications of US-China clean energy cooperation/competition</li>
+      <li>Founder of GC3 Strategy, which works with US companies seeking to partner in Greater China</li>
+      <li>Director of the World Economic Forum (2006-2008), responsible for Asian Corporate Partnerships</li>
+      <li>Career member of the US Senior Foreign Commercial Service (1988-2002)</li>
+      <li>UC Berkeley, PhD and MA; Princeton University, BA</li>
+      <li>Diplomatic fluency in Mandarin Chinese, Japanese, Hindi, German and French</li>
+     </ul>
+   </div>
+    </div>
+  </div>
+ </div>
+ </div>
+</div>
+</section>
       
       <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Enroll Class Now!</h2>
               <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
             </div>
           </div>
         </div>
       </section>
-
-      </div><!--end page wraper-->
-      <footer  class="probootstrap-footer probootstrap-bg">
+    </div><!-- END wrapper -->
+      
+       <footer  class="probootstrap-footer probootstrap-bg">
         <div class="probootstrap-copyright">
           <div class="container">
             <div class="row">
@@ -192,10 +226,25 @@
           </div>
         </div>
       </footer>
+
+  
+    
+
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
-
-    
+<script>
+    $(function() {
+        $('.showSingle').click(function(){
+        $('.targetDiv').hide();
+            
+    $('#div'+jQuery(this).attr('target')).show();     $('#tap'+jQuery(this).attr('target')).show(); $(this).addClass('active').siblings().removeClass('active');
+    });
+});
+</script>
+  
+ 
+   
+      
   </body>
 </html>

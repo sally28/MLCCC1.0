@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newsletter</title>
+    <title> MLCCC</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <meta name="description" content="mlccc website">
     <meta name="keywords" content="chinese courses, chinese classes, chinese culture,chinese school , chinese camp,">
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -41,7 +44,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
               <ul>
                 <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
                 <li><a href="#"><i class="icon-instagram2"></i></a></li>
                 <li><a href="#"><i class="icon-youtube"></i></a></li>
                 <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
@@ -51,7 +54,7 @@
         </div>
       </div>
 
-       <nav class="navbar navbar-default probootstrap-navbar">
+     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
             <div class="btn-more js-btn-more visible-xs">
@@ -86,7 +89,7 @@
                       <li><a href="#">President's Volunteer Service Award</a></li>
                     </ul>
                   </li>
-                </ul>     
+                </ul>
               </li>
               <!--<li><a href="https://mlcccadmin.herokuapp.com/#/registration" target="_blank">Registration</a></li>-->
               <li class="dropdown">
@@ -108,90 +111,119 @@
               <ul class="dropdown-menu">
                   <li><a href="#">Donation</a></li>
                   <li><a href="#">Foundations</a></li>
-              </ul>      
+              </ul>
               </li>
               <li>
                  <a href="https://mlcccadmin.herokuapp.com" target="_blank" >Login</a>
-              </li> 
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      
-      <section class="probootstrap-section probootstrap-section-colored">
+
+       <section class="probootstrap-section probootstrap-section-colored">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-left section-heading probootstrap-animate">
-              <h1 class="at-item">Newsletter</h1>
+            <div class="col-md-12 text-left section-heading probootstrap-animate ctt-container">
+              <h1>MLCCC Community</h1>
             </div>
           </div>
         </div>
       </section>
 
-     <section class="probootstrap-section probootstrap-section-sm">
+
+
+<section class="probootstrap-section probootstrap-section-sm">
         <div id= "tabs" class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="row probootstrap-gutter0">
                 <div class="col-md-3" id="probootstrap-sidebar">
                   <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
-                   <div class="text-uppercase probootstrap-uppercase red">2019-2020 Newsletter</div>
                     <ul class="probootstrap-side-menu">
-                      <li class="showSingle" target="1">2019-09-08</li>
-                      <li lass="showSingle" target="2">2019-09-15</li>
-                      <li lass="showSingle" target="3">2019-09-22</li>
-                      <li>2019-09-29</li>
-                      <li>2019-10-06</li>
-                      <li>2019-10-13</li>
-                      <li>2019-10-20</li>
-                      <li>2019-10-27</li>
-                      <li>2019-11-03</li>
-                      <li>2019-11-10</li>
-                      <li>2019-11-17</li>
-                      <li>2019-11-24</li>
-                      <li>2019-12-01</li>
-                      <li>2019-12-08</li>
-                      <li>2019-12-15</li>
-                      <li>2019-12-22</li>
-                      <li>2019-12-29</li>
-                      <li>2020-01-05</li>
-                      <li>2020-01-19</li>
-                      <li>2020-01-26</li>
-                      <li>2020-02-02</li>
-                      <li>2020-02-09</li>
-                      <li>2020-02-16</li>
-                      <li>2020-02-23</li>
-                      <li>2020-03-01</li>
-                      <li>2020-03-08</li>
-                      <li>2020-03-15</li>
-                      <li>2020-03-22</li>
-                      <li>2020-03-29</li>
-                      <li>2020-04-05</li>              
+                     <li id="gala" class="active showSingle" target="1">Chinese New Year Gala</li>
+                     <li id="clubs" class="showSingle" target="2">Clubs</li>
+                      <li id="presentation" class="showSingle" target="3">Culture Presentation</li>
+                      <li id="visa" class="showSingle" target="4">Travel Visa</li>
+                      <li id="tutor" class="showSingle" target="5">Tutoring</li>
+                      <li id="volunteer" class="showSingle" target="7">Volunteer</li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-9 col-md-push-1  probootstrap-animate targetDiv" id="includedContent">
-                
-                </div><!-- end col-md-9-->
-          </div>
-         </div>
-         </div>
-        </div>
+
+
+
+<div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+ <div id="div1" class="targetDiv">
+    <h3 class="red">MLCCC's Chinese New Year Free Community Gala</h3>
+    <p class="i">Free Admissions, All Are Welcome!</p>
+    <p>Bring your family and friends! It's a great opportunity of family fun and cultural exposure!</p>
+    <p><b><a href="contact.html">Location: Great Valley High School</a></b></p>
+      <p> 1pm-3pm: New Year Show</p>
+    <ul>
+       <li><em>Lion dances, Chinese folk dances, traditional Chinese music, martial arts demo, songs and poems</em></li>
+    </ul>
+    <p>3pm-5pm: Culture Fair</p>
+    <ul>
+        <li>a dozen traditional Chinese games and crafts stations such as Calligraphy, Chopsticks Contest, Traditional Paper Cutting. Visit stations, collect tickets, claim prizes.</li>
+    </ul>
+    <p>Chinese food, snacks, and merchandise will also be onsite to add to the festivities!</p>
+    <h3 class="red">MLCCC Mid-Autumn Chinese Music Festival</h3>
+    <p>Our festival features about two hours of music, with some dance performances, that celebrate the Chinese culture's Moon Festival</p>
+    <h3 class="red">TESTIMONIALS:</h3>
+    <p>"AMAZING job with the Chinese New Year Gala! It was phenomenal! My Daisy Girl Scout troop REALLY enjoyed themselves and learning more about Chinese culture. Amazing job- start to finish! What a wonderful WONDERFUL event! Thanks to everyone for all of your hard work and for putting on such a successful event!"
+    - Stacy Cooper Albert</p>
+    <p>"Thank you for a lovely festival! I loved the teachers' fan dance, the martial arts demonstration, and the poster display in the cafeteria."- The Barzel family of Bala Cynwyd, PA</p>
+    <br>
+     <a href="#">Gala Flyer</a> <br>
+     <a href="#">Gala Gallary</a>
+</div>
+
+   <div id="div2" class="targetDiv" style="display: none">
+     <p>MLCCC strives to provide safe and comfortable spaces for our parents to enjoy while their children are learning. All clubs are free, while donation is appreciated to help with the rental expense. </p>
+     <p><em class="red">Basketball Club</em> welcomes parents from around the community. Our indoor court ensures that the fun is all year round! </p>
+     <p><em class="red">Fitness Club:</em> from aerobics to Zumba, it welcomes young and old for a sweating fun time together. </p>
+     <p><em class="red">Karaoke, Games, and Cards Club:</em> Whether you enjoy dueling quietly over a chess board, or singing your hearts out in front of a microphone, this club has something for everyone! </p>
+     <p><em class="red">Photography and Video Club:</em> learn to take awesome photos of your children! The Club has been a key part in audio, video, and photographic support of schoolwide events throughout the year. Thank you! </p>
+     <p><em class="red">Story Club </em> is the perfect place for preschoolers to be while waiting for their older siblings to finish class. Listen to a story, do a craft, learn some Chinese.  </p>
+     <p><em class="red">Taiji Club:</em> led by the nationally certified Taiji instructor Ms. Shao, there is no reason not to join. It's fun and healthy for young and old, body and mind. </p>
+     <p><em class="red">Tea Club:</em> Come and sip a cup of tea, take a load off, enjoy a good conversation. All supplies are contributed by club members.</p>
+     <p><em class="red">Yoga Club</em> is taught by a registered Power Yoga teacher (RYT-200) and member of the Power Yoga Alliance, Ms. Esther Estes who is also a former physician. You get sore but it is so good for you.</p>
+
+
+  </div>
+
+  <div id="div3" class="targetDiv" style="display: none">
+    <h3 class="red">Culture Presentaion</h3>
+     <ul >
+      <li>Current 2010 Public Policy Scholar with the Woodrow Wilson International Center in Washington DC, researching policy implications of US-China clean energy cooperation/competition</li>
+      <li>Founder of GC3 Strategy, which works with US companies seeking to partner in Greater China</li>
+      <li>Director of the World Economic Forum (2006-2008), responsible for Asian Corporate Partnerships</li>
+      <li>Career member of the US Senior Foreign Commercial Service (1988-2002)</li>
+      <li>UC Berkeley, PhD and MA; Princeton University, BA</li>
+      <li>Diplomatic fluency in Mandarin Chinese, Japanese, Hindi, German and French</li>
+     </ul>
+   </div>
+    </div>
+  </div>
+ </div>
+ </div>
+</div>
 </section>
 
       <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Enroll Class Now!</h2>
               <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
             </div>
           </div>
         </div>
       </section>
+    </div><!-- END wrapper -->
 
-      </div><!--end page wraper-->
-      <footer  class="probootstrap-footer probootstrap-bg">
+       <footer  class="probootstrap-footer probootstrap-bg">
         <div class="probootstrap-copyright">
           <div class="container">
             <div class="row">
@@ -206,9 +238,24 @@
         </div>
       </footer>
 
+
+
+
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+<script>
+    $(function() {
+        $('.showSingle').click(function(){
+        $('.targetDiv').hide();
+
+    $('#div'+jQuery(this).attr('target')).show();     $('#tap'+jQuery(this).attr('target')).show(); $(this).addClass('active').siblings().removeClass('active');
+    });
+});
+</script>
+
+
+
 
   </body>
 </html>
