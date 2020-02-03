@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: #EFF0F4;
+   background: linear-gradient(to top, #ffcc99 0%, #ffffff 100%);
   color:black;
   line-height: 20px;
   font-size: 14px;
@@ -945,7 +945,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section {
-  padding: 5em 0;
+  padding:5em 0;
   position: relative;
 }
 
@@ -1424,18 +1424,21 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-flex-block .probootstrap-text {
-  width: 30%;
+  width: 20%;
   margin-right: 20px;
   background: #ffffff;
   padding: 30px;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .probootstrap-flex-block .probootstrap-text {
     width: 100%;
     margin-right: 0;
+      text-align: center;
+
   }
 }
 
@@ -1612,6 +1615,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: .3s all;
   transition: .3s all;
   border-bottom: 3px solid #6a41ed;
+
 }
 
 .probootstrap-featured-news-box .probootstrap-text h3 {
@@ -2566,6 +2570,7 @@ a:hover, a:focus, a:active {
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider .slides > li {
   height: 400px;
+  width: 750px;
 }
 
 @media screen and (max-width: 480px) {
