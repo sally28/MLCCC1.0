@@ -224,8 +224,8 @@ a{
 }
 
 .navred {
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(red, yellow);
+  background: rgb(224,82,82);
+background: radial-gradient(circle, rgba(224,82,82,1) 60%, rgba(233,196,148,1) 100%);
 
 }
 
