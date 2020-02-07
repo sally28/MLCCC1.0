@@ -224,9 +224,10 @@ a{
 }
 
 .navred {
-  background: rgb(224,82,82);
-background: radial-gradient(circle, rgba(224,82,82,1) 60%, rgba(233,196,148,1) 100%);
-
+  background: linear-gradient(45deg, #fff9d1, #b9edff);
+    background-image: linear-gradient(45deg, rgb(255, 249, 209), rgb(185, 237, 255));
+    height: 150px;
+    text-align: center;
 }
 
 section {
@@ -235,4 +236,8 @@ section {
 
 .homepageSpace {
     padding-top:!important 0;
+}
+
+.navbold {
+    font-weight: 500;
 }
