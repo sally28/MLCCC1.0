@@ -241,3 +241,15 @@ section {
 .navbold {
     font-weight: 500;
 }
+
+ul {
+
+}
+
+.nopadding {
+    margin-bottom:0px!important;
+}
+
+.marleft {
+    margin-left: 50px;
+}
