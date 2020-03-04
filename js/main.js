@@ -230,12 +230,13 @@
 	----------------------------------------*/
 	var flexSlider = function() {
 	  jQuery('.flexslider').flexslider({
-	    animation: "fade",
+	    animation: "slide",
 	    prevText: "",
 	    nextText: "",
 	    slideshow: true
 	  });
-	}
+	};
+
 
 	/*----------------------------------------
 		Feature Showcase
@@ -623,7 +624,7 @@
 	jQuery(window).load(function(){
 		owlCarousel();
 		flexSlider();
-	});
+  });
 
 	
 

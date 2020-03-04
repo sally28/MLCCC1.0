@@ -6428,7 +6428,7 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
 }
 .flexslider .slides img {
-  height: auto;
+  height: -webkit-fill-available;
   -moz-user-select: none;
 }
 .flex-viewport {

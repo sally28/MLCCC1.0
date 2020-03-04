@@ -2253,9 +2253,9 @@ pointer-events: all;
 	.flex-direction-nav a {
 	  text-decoration: none;
 	  display: block;
-	  width: 30px;
-	  height: 30px;
-	  // margin: -40px 0 0;
+	  width: 20px;
+	  height: 20px;
+     // margin: -40px 0 0;
 	  position: absolute;
 	  top: 50%;
 	  -webkit-transform: translateY(-50%);
@@ -2272,7 +2272,7 @@ pointer-events: all;
 	  -ms-transition: all 0.3s ease-in-out;
 	  -o-transition: all 0.3s ease-in-out;
 	  transition: all 0.3s ease-in-out;
-	  background: rgba(0,0,0,.8);
+	 // background: rgba(0,0,0,.8);
 	  border-radius: 0px;
 	  padding: 30px;
 	}

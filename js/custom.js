@@ -15,4 +15,5 @@ jQuery(document).ready(function() {
         $('#div'+jQuery(this).attr('target')).show();
         $(this).addClass('active').siblings().removeClass('active');
     });
+
 });
