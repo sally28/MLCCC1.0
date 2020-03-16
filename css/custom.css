@@ -105,7 +105,17 @@ height:100%;
 }
 
 
+.noMargin {
+    margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .noMargin {
+   margin-left: 10px;
+  }
+}
 
-#calendar {
-
+@media screen and (max-width: 480px) {
+  .noMargin {
+   margin-left: 10px;
+  }
 }
