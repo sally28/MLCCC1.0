@@ -23,7 +23,7 @@
   </head>
   <body>
 
-    <div class="probootstrap-page-wrapper">
+    <div id="wrapper" class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
      <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container header-container">
@@ -110,15 +110,15 @@
                 <div class="col-md-2" id="probootstrap-sidebar">
                   <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
                     <ul class="probootstrap-side-menu">
-                     <li id="chinese" class="showSingle" target="1">Language</li>
+                    <li id="chinese" class="showSingle" target="1">Language</li>
                       <li id="enrich" class="showSingle" target="2">Enrichment</li>
                        <li class="dropdown-submenu dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>From</span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="form/RegFormWayne.pdf">Chinese Registration Form</a></li>
-                          <li><a href="#">Second Level Menu</a></li>
-                          <li><a href="#">Second Level Menu</a></li>
-                          <li><a href="#">Second Level Menu</a></li>
+                        <ul class="navpink dropdown-menu">
+                          <li><a href="form/RegFormWayneChinese.pdf" target="_blank">Chinese Camp Registration Form</a></li>
+                          <li><a href="form/RegFormWayneWritingOnly.pdf" target="_blank">English Writing Registration Form</a></li>
+                          <li><a href="form/RegFormWayneFencingOnly.pdf" target="_blank">Fencing Camp Registration Form</a></li>
+                          <li><a href="form/RegFormWayneCombo.pdf" target="_blank">Camps Combo Registration Form</a></li>
                         </ul>
                       </li>
                       <li id="rules" class="showSingle" target="3">Policies</li>
@@ -128,12 +128,12 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+                <div class="col-md-7 col-md-push-2  probootstrap-animate" id="probootstrap-content">
                  
 <!--default page-->
 <div id="div0" class="targetDiv">
  <h5 class="red" align="center"><em><b>MLCCC Summer Camp Programs</b></em></h5>
-    <p>MLCCC offers a Chinese Language and Culture Camp, an English Writing Camp, a Math Camp, and more. Registration for the 2020 Chinese Language and Culture Camp has begun. Registration for English Writing and Math Camps will begin in February. Other special camps such as International Chess are being considered for the 2020 season.</p>
+    <p>MLCCC is offering the following summer camps for 2020. Registration has begun for all of them.</p>
     <ol>
        <li>MLCCC Chinese Summer Camp in Wayne, PA</li> 
        <li>MLCCC English Writing Summer Camp in Wayne,PA</li>
@@ -148,7 +148,10 @@
         <li>literary language such as similes, metaphors, etc.</li>
         <li>writing techniques and organization.</li>
     </ul>
-    <p>Our Math Enrichment Summer Camp is open to all students entering 3rd, 4th, 5th, or 6th grade in September, and run in a similar manner as the Writing Camp. Our English Writing Camp,  Math Enrichment Camp, and Fencing Camp are within the same building as our Chinese Language and Culture Camp at Wayne, and are 3 hours a day for 2 weeks. Hence students at our Wayne location have the option to register for:</p>
+    <p>Our Math Summer Camp is open to all students entering 3rd, 4th, 5th, or 6th grade in September, and run in a similar manner as the Writing Camp. </p>
+    <p>Our Fencing Camp is open to children ages 7-14 and taught by a certified fencing coach.</p>
+    <p>Our English Writing Camp,  Math Camp, and Fencing Camp are within the same building as our Chinese Language and Culture Camp at Wayne, and are 3 hours a day for 2 weeks. Hence students at our Wayne location have the option to register for:</p>
+
     <ul class="disc">
         <li>just our Chinese Camp, or</li>
         <li>just our English Writing Camp, or</li>
@@ -157,24 +160,27 @@
         <li>a combo of two of the above (example: English Writing in the morning and Math in the afternoon, or Chinese in the morning and Fencing in the afternoon, all with the option of after care</li>
     </ul>   
 </div><!--end default -->
+
 <!--Language-->
-<div id="div1" class="targetDiv" style="display: none">
+<div id="div1" class="targetDiv" style="display: none" >
     <h5 class="red" align="center"><em><b>MLCCC Chinese Summer Camp in Wayne, PA</b></em></h5>
-     <p>Located at the <a href="http://www.uccvf.org/" target="_blank">United Church Of Christ at Valley Forge </a><a href="https://www.mapquest.com/us/pa/wayne/19087-1347/45-walker-rd-40.075690,-75.438341" target="_blank">(map),</a> at 45 Walker Road, Wayne, PA 19087, near Valley Forge Elementary School, our MLCCC summer camp is open to children ages 3-13 and provides a variety of language and cultural activities that enrich and entertain our campers' summer days.</p>
-     <p>Our Chinese Camp includes: Chinese Language and Cultural Lessons and Projects, Drawing, Karate, Chinese Folk Dance, Math, Games, and Physical Education. Please see a sample of our <a href="#">weekly schedule</a> to get an idea of what our camp is like. We also provide <a href="#">"Special" classes</a> such as Tennis and Martial Arts, which are taught by expert teachers that we invite to our school. Children who are not enrolled in our camp are also welcome to join these classes for an additional fee.</p>
+     <p>Located at the <a href="http://www.uccvf.org/" target="_blank">United Church Of Christ at Valley Forge </a><a href="https://www.mapquest.com/us/pa/wayne/19087-1347/45-walker-rd-40.075690,-75.438341" target="_blank">(map)</a>, at 45 Walker Road, Wayne, PA 19087, near Valley Forge Elementary School, our MLCCC summer camp is open to children ages 3-13 and provides a variety of language and cultural activities that enrich and entertain our campers' summer days.</p>
+     <p>Our Chinese Camp includes: Chinese Language and Cultural Lessons and Projects, Drawing, Karate, Chinese Folk Dance, Math, Games, and Physical Education. Please see a sample of our <a href="form/ScheduleWayne.pdf" target="_blank">weekly schedule</a> to get an idea of what our camp is like. We also provide <!--<em class="popup" onclick="myFunction()">--><em>"Special Classes"</em>
+
+    <!--  <span class="popuptext" id="myPopup">A Simple Popup!</span>-->
+
+     such as Tennis and Martial Arts, which are taught by expert teachers that we invite to our school. Children who are not enrolled in our camp are also welcome to join these classes for an additional fee.</p>
      <p>We offer the flexibility of registering for two-week sessions at a discount or for individual weeks, as well as the flexibility of registering for full days (8am - 6pm), ¾ days (8am - 3:30pm), or half days (8am - 1pm). We also have sibling and return camper discounts, in addition to early registration and referral bonus.</p>
-     <p>Since our <a href="#">English Writing Camp , Math Enrichment Camp   and Fencing Camp</a> are also at the same location and each runs for 3 hours each day in a 2-week session, our Wayne campers will have the option to mix and match the four choices: Chinese, English Writing, Math or Fencing. For example, they can be in Writing Camp for half the day and Math Camp for half the day, or Fencing Camp for half the day and Chinese Camp for the rest of the day. Please see our <a href="#">Chinese, English Writing, Math Enrichment and Fencing Camps Combo Registration Form.</a></p>
-     <strong>REGISTRTION:</strong> <a href="#">Registration Form (Chinese)</a> <br>
-     <a href="#">Registration Form (Chinese, English Writing, Math, Fencing Camps Combo)</a>
-     <a href="#">Camp Policies</a> <br>
-     <strong>WEEKLY SCHEDULE:</strong> <a href="#">Sample Schedule</a>
+     <p>Since our <em><b>English Writing Camp,Math Enrichment Camp and Fencing Camp</b></em> are also at the same location and each runs for 3 hours each day in a 2-week session, our Wayne campers will have the option to mix and match the four choices: Chinese, English Writing, Math or Fencing. For example, they can be in Writing Camp for half the day and Math Camp for half the day, or Fencing Camp for half the day and Chinese Camp for the rest of the day. Please see our <a href="form/RegFormWayneCombo.pdf" target="_blank">Chinese, English Writing, Math Enrichment and Fencing Camps Combo Registration Form.</a> <br>
+     <strong>REGISTRTION:</strong> <a href="form/RegFormWayneChinese.pdf" target="_blank">Registration Form (Chinese)</a> <br>
+     <a href="form/RegFormWayneCombo.pdf" target="_blank">Registration Form (Chinese, English Writing, Math, Fencing Camps Combo)</a>
+    </p>
+ </div><!--end Language -->
   
-  </div><!--end div1 -->
-  
-  <!--enrichment-->
+<!--enrichment-->
   <div id="div2" class="targetDiv" style="display: none">
-    <h5 class="red"><em><b>MLCCC English Writing Summer Camp in Wayne, PA </b></em></h5>
-      <p>Located at the <a href="http://www.uccvf.org/" target="_blank">United Church Of Christ at Valley Forge </a><a href="https://www.mapquest.com/us/pa/wayne/19087-1347/45-walker-rd-40.075690,-75.438341" target="_blank">(map),</a>at 45 Walker Road, Wayne, PA 19087, near Valley Forge Elementary School, our MLCCC English Writing summer camp is open to all students who will be 3rd, 4th, 5th, or 6th graders in September. It is taught by a Pennsylvania certified K-12 Language Arts teacher and runs for 3 hours a day for 10 days (2 weeks).</p>
+    <h5 class="red" align="center"><em><b>MLCCC English Writing Summer Camp in Wayne, PA</b></em></h5>
+      <p>Located at the <a href="http://www.uccvf.org/" target="_blank">United Church Of Christ at Valley Forge </a><a href="https://www.mapquest.com/us/pa/wayne/19087-1347/45-walker-rd-40.075690,-75.438341" target="_blank">(map)</a>, at 45 Walker Road, Wayne, PA 19087, near Valley Forge Elementary School, our MLCCC English Writing summer camp is open to all students who will be 3rd, 4th, 5th, or 6th graders in September. It is taught by a Pennsylvania certified K-12 Language Arts teacher and runs for 3 hours a day for 10 days (2 weeks).</p>
      <p>The purpose of the camp is not only to improve writing skills, but also to enhance thinking abilities, and inspire confidence and love for the power of the written word and language. Topics taught include:</p>
      <ul class="disc marleft">
          <li>various forms of writing such as narrative, persuasive, poetic, etc.</li>
@@ -182,43 +188,73 @@
          <li>writing mechanics, techniques and organization.</li>
      </ul>
      <p>We have sibling and return camper discounts, in addition to early registration and referral bonus.</p>
-     <p>Since our <a href="#">English Writing Camp, Math Enrichment Camp and Fencing Camp</a> are also at the same location and each runs for 3 hours each day in a 2-week session, our Wayne campers will have the option to mix and match the four choices: Chinese, English Writing, Math or Fencing. For example, they can be in Writing Camp for half the day and Math Camp for half the day, or Fencing Camp for half the day and Chinese Camp for the rest of the day. Please see our <a href="#">Chinese, English Writing, Math Enrichment and Fencing Camps Combo Registration Form.</a> </p>  
-     <strong>REGISTRTION:</strong> <a href="#">Registration Form (Chinese)</a> <br>
-     <a href="#">Registration Form (Chinese, English Writing, Math, Fencing Camps Combo)</a>
-     <a href="#">Camp Policies</a> <br>
-     <strong>WEEKLY SCHEDULE:</strong> <a href="#">Sample Schedule</a>
-   </div><!-- end div2 -->
+     <p>Since our <em><b>English Writing Camp, Math Enrichment Camp and Fencing Camp</b></em> are also at the same location and each runs for 3 hours each day in a 2-week session, our Wayne campers will have the option to mix and match the four choices: Chinese, English Writing, Math or Fencing. For example, they can be in Writing Camp for half the day and Math Camp for half the day, or Fencing Camp for half the day and Chinese Camp for the rest of the day. <br>
+     Please see our <a href="form/RegFormWayneCombo.pdf" target="_blank">Chinese, English Writing, Math Enrichment and Fencing Camps Combo Registration Form.</a>
+     <strong>REGISTRTION:</strong> <a href="form/RegFormWayneWritingOnly.pdf" target="_blank">Registration Form (English)</a> <br>
+     <a href="form/RegFormWayneCombo.pdf">Registration Form (Chinese, English Writing, Math, Fencing Camps Combo)</a>
+    </p>
+   </div>
+<!-- end Enrichment-->
 
-  <!-- policy-->
+<!-- policies-->
    <div id="div3" class="targetDiv" style="display: none">
-    <strong>Registration Fee:</strong> $50 per family, waived if deposit is submitted or postmarked by 4/1/2020. <br>
-     <strong>Referral Bouns Policy:</strong> Referral Bonus: $25 bonus will be given for each new camper referred (from different family) who registers for at least 2 weeks (new = have not attended any of our camps before). There is no limit on the number of referrals.
-     <br>
-     <strong>Deposit Policy:</strong> Chinese Camp: $60 per week, $120 per session, $540 for the whole summer. <br>
-Enrichment/Combo Camp: $150 per session, $600 for the whole summer.
-Deposit is required for each child at registration time. <br>
+    <h5 class="red" align="center"><em><b>MLCCC Summer Camo Policies</b></em></h5>
+    <p>
+        <strong class="red">Registration Fee:</strong> <br>
+        $50 per family, waived if deposit is submitted or postmarked by <em><b>4/1/2020</b></em>. <br>
+    </p>
+    <p>
+        <strong class="red">Referral Bouns Policy:</strong> <br>
+        Referral Bonus: $25 bonus will be given for each new camper referred (from different family) who registers for at least 2 weeks (new = have not attended any of our camps before). There is no limit on the number of referrals.
+    </p>
+    <p>
+        <strong class="red">Late Pickup Policy:</strong> <br>
+        $1 per minute late fee.
+    </p>
+    <p>
+       <strong class="red">Deposit Policy:</strong> <br>
+       Chinese Camp: $60 per week, $120 per session, $540 for the whole summer. <br>
+       Enrichment/Combo Camp: $150 per session, $600 for the whole summer. <br>
+       Deposit is required for each child at registration time. <br>
+       Deposit is fully refundable if withdraw by <em><b>4/1/2020</b></em>.After <em><b>4/1/2020</b></em>, deposit is non-refundable.
+    </p>
+    <p>
+    <strong class="red">Policy on Switching Weeks, Changing Pick Up Times, or Adding Weeks (If Space is Available)</strong> <br>
+    Before or on <em><b>6/1/2020</b></em>, no cost to switching weeks, changing pick up times, or adding weeks. <br>
+    After <em><b>6/1/2020</b></em>, a $5 fee per child per transaction, for each switch-of-weeks / change-of-pick-up-times (even if for a day) / addition-of-weeks.  <br>
+    <i>Note that policy on reducing number of weeks or withdrawing completely is specified below.</i>
+    </p>
 
-Deposit is fully refundable if withdraw by 4/1/2020. After 4/1/2020, deposit is non-refundable.
+   </div>
+<!-- end policies -->
 
-     <strong>Policy on Switching Weeks, Changing Pick Up Times, or Adding Weeks (If Space is Available):</strong> Before or on 6/1/2019, no cost to switching weeks, changing pick up times, or adding weeks. <br>
-     After 6/1/2019, a $5 fee per child per transaction, for each switch-of-weeks / change-of-pick-up-times (even if for a day) / addition-of-weeks.  <br>
-     <i>Note that policy on reducing number of weeks or withdrawing completely is specified below.</i>
-
-   </div> <!-- end div3 -->
-   <!-- testimonail-->
+ <!-- testimonail-->
    <div id="div4" class="targetDiv" style="display: none;text-align: center;">
-    <p> "Nicholas LOVED his teacher. He enjoyed learning Chinese and writing Chinese characters. He enjoyed the handkerchief and fan dancing and exercise dances. I really appreciated the caring, gentle atmosphere. The performances the children did at the end of each week were wonderful. Nicholas is looking forward to going back to Chinese Camp next summer."
-    <b>- Connie K.</b>
-    <br>
-    "This is my son's first year at the summer camp at MLCCC and he loves it! It's a great combination of athletics (tennis &amp; martial arts), academics, and outdoor play. The teachers and administrators are open and caring. I love the language immersion - my son is finally speaking more Mandarin at home. We'll be back!" <br>
-    <b>- C. L.</b>
-    <br>
-    "We were in the car, and Brianna and Shannon started singing one of your Chinese songs that I had never heard before! They ARE 'getting it', and storing it in their sponge/absorbent brains! I love it!" <br>
-    <b>- Linda Gosnell</b>
-    <br>
-    "I just wanted to share how much the girls enjoyed your summer camp. Now every time we go grocery shopping they say all the fruits and vegetables out loud in Chinese! And at home the girls will make their own paper fans and dance with them! It was a great experience. Thank you all for your hard work!"<br>
-    <b>- P. C.</b>
-    <br>
+    <h5 class="red"><em><b>Summer Camp Testimonials</b></em></h5>
+      <blockquote>"Nicholas LOVED his teacher. He enjoyed learning Chinese and writing Chinese characters. He enjoyed the handkerchief and fan dancing and exercise dances. I really appreciated the caring, gentle atmosphere. The performances the children did at the end of each week were wonderful. Nicholas is looking forward to going back to Chinese Camp next summer."
+      </blockquote>
+      <footer>
+         <cite>-Connie K.</cite>
+      </footer>
+      <blockquote>
+          "This is my son's first year at the summer camp at MLCCC and he loves it! It's a great combination of athletics (tennis &amp; martial arts), academics, and outdoor play. The teachers and administrators are open and caring. I love the language immersion - my son is finally speaking more Mandarin at home. We'll be back!"
+      </blockquote>
+      <footer>
+          <cite>-C.L</cite>
+      </footer>
+     <blockquote>
+         "We were in the car, and Brianna and Shannon started singing one of your Chinese songs that I had never heard before! They ARE 'getting it', and storing it in their sponge/absorbent brains! I love it!"
+     </blockquote>
+     <footer>
+     <cite>- Linda Gosnell</cite>
+     </footer>
+     <blockquote>
+         "I just wanted to share how much the girls enjoyed your summer camp. Now every time we go grocery shopping they say all the fruits and vegetables out loud in Chinese! And at home the girls will make their own paper fans and dance with them! It was a great experience. Thank you all for your hard work!"
+     </blockquote>
+     <footer>
+         <cite>- P. C.</cite>
+     </footer>
+
     "We are very grateful for the wonderful program run by MLCCC. Both Sophie and Will learned a lot and enjoyed themselves immensely. We appreciated the opportunity each Friday to hear the children show what they had learned that week. They were very proud to show off their accomplishments. They are anxious to return next summer."<br>
     <b>- M. D.</b>
     <br>
@@ -272,22 +308,10 @@ Deposit is fully refundable if withdraw by 4/1/2020. After 4/1/2020, deposit is 
     "As always, mlccc is a great program."<br>
     <b>- A. M. L.</b>
 
-
-
-
-
-
-
-
-
-
-
-
-
     </p>
 
    </div> <!-- end div4 -->
- </div>
+ </div><!-- end col-7-->
 </div>
 </div>
 </div>
@@ -332,6 +356,24 @@ Deposit is fully refundable if withdraw by 4/1/2020. After 4/1/2020, deposit is 
         $(this).addClass('active').siblings().removeClass('active');
     });
 });
+      /*  function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+        $(function() {
+        $('.showSingle').click(function(){
+        $('.targetDiv').hide();
+        $('#div'+jQuery(this).attr('target')).show();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+            myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+
+});
+     */
+
       </script>
       
   </body>
