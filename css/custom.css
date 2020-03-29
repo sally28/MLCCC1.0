@@ -190,3 +190,11 @@ height:100%;
   to {opacity:1 ;}
 }
 
+
+.two-word .probootstrap-side-menu li {
+width: 200px;
+}
+
+li.flip{
+ color: blue;
+}

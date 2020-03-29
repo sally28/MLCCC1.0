@@ -3316,3 +3316,7 @@ a {
 .probootstrap-footer {
     
 }
+
+#probootstrap-sidebar-tworow {
+    width: 200px;
+}

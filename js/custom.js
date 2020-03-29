@@ -16,4 +16,10 @@ jQuery(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
+     $(".flip").click(function(){
+    $(".panel").fadeToggle("slow");
+  });
+
 });
+
+
