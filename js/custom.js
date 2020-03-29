@@ -17,8 +17,10 @@ jQuery(document).ready(function() {
     });
 
      $(".flip").click(function(){
-    $(".panel").fadeToggle("slow");
+    $(this).siblings(".panel").fadeToggle("slow");
   });
+
+
 
 });
 
