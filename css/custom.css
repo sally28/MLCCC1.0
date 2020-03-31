@@ -198,3 +198,14 @@ width: 200px;
 li.flip{
  color: blue;
 }
+
+.white {
+    color: aliceblue;
+
+}
+
+.teacherPic {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+}

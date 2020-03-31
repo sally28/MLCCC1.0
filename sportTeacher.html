@@ -15,47 +15,19 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-   
+
+
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-
-    <div class="probootstrap-search" id="probootstrap-search">
-      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
-      <form action="#">
-        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
-      </form>
-    </div>
-    
-    <div class="probootstrap-page-wrapper">
+    <div id="wrapper" class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
-      
-      <div class="probootstrap-header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
-              <span><i class="icon-location2"></i>225 Phoenixville Pike, Malvern, PA 19355</span>
-              <span><i class="icon-phone2"></i>+1-610-909-6094</span>
-              <span><i class="icon-mail"></i>info@mlccc.org</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
-              <ul>
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                <li><a href="#"><i class="icon-instagram2"></i></a></li>
-                <li><a href="#"><i class="icon-youtube"></i></a></li>
-                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-     <nav class="navbar navbar-default probootstrap-navbar">
-        <div class="container">
-          <div class="navbar-header">
+       <nav class="navbar navbar-default probootstrap-navbar fixed-top">
+        <div class="container header-container">
+          <div class="navbar-header clearfix">
             <div class="btn-more js-btn-more visible-xs">
               <a href="#"><i class="icon-dots-three-vertical "></i></a>
             </div>
@@ -67,52 +39,33 @@
             </button>
             <a class="navbar-brand" href="index.html" title="mainPage"></a>
           </div>
-
           <div id="navbar-collapse" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul id="crossx" class="nav navbold navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
-              <li class="dropdown">
-                 <a href="program.html" class="dropdown-toggle">Program</a>
-                <ul class="dropdown-menu">
-                  <li><a href="school.html">Weekend School</a></li>
-                  <li><a href="camps.html">Summer Camps </a></li>
-                  <li><a href="specialProgram.html">Special Program</a></li>
-                </ul>     
-              </li> 
-              <li><a href="events.html">Events</a></li>
-              <li><a href="#">Registration</a></li>  
-              <li class="active dropdown">
-              <a href="history.html" class="dropdown-toggle">About Us</a>
-              <ul class="dropdown-menu">
-                  <li><a href="history.html">History</a></li>
-                  <li><a href="board.html">Board of Directors</a></li>
-                  <li><a href="staffs.html">Staffs</a></li>
-              </ul>      
-              </li>  
-              <li><a href="contact.html">Contact</a></li>
-              <li class="dropdown">
-                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Log In</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Parents </a></li>
-                  <li><a href="#">Teachers </a></li>
-                </ul>     
-              </li> 
+              <li><a href="program.html" class="dropdown-toggle">Weekend School</a></li>
+              <li><a href="camps.html">Summer Camp</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li class="active"> <a href="about.html">About Us</a></li>
+              <li><a href="support.html">Support Us</a></li>
+              <li>
+                 <a href="https://mlcccadmin.herokuapp.com" target="_blank" >Login</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      
+
        <section class="probootstrap-section probootstrap-section-colored">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-left section-heading probootstrap-animate ctt-container">
-              <h1 class="ctt-item">Chinese Classes Teachers </h1>
+            <div class="col-md-12 text-right section-heading probootstrap-animate ctt-container">
+              <h3 class="white">Sport Teachers </h3>
             </div>
           </div>
         </div>
       </section>
 
-      
+
 
 <section class="probootstrap-section probootstrap-section-sm">
         <div id= "tabs" class="container">
@@ -129,8 +82,8 @@
                     </ul>
                   </div>
                 </div>
-                
-             <div class="col-md-2 col-md-push-1  probootstrap-animate" id="probootstrap-content"> 
+
+             <div class="col-md-2 col-md-push-1  probootstrap-animate" id="probootstrap-content">
                 <div id="tap1" class="targetDiv" >
                 <img src="img/teacher.jpg" alt="">
                 </div>
@@ -143,13 +96,13 @@
                 <div id="tap4" class="targetDiv" style="display: none">
                 <img src="img/teacherM.jpg" alt="">
                 </div>
-                
-                
+
+
             </div>
-               
-                 
+
+
 <div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
-                                              
+
  <div id="div1" class="targetDiv">
     <h2 class="brname">Baoli Gao</h2>
      <ul>
@@ -157,10 +110,10 @@
       <li>Joined MLCCC in 2009 as Chinese Language Instructor</li>
       <li>5+ years teaching experience in Chinese Gospel Church</li>
       <li>10+ years working experience in civil engineering industry</li>
-      <li>Gansu Union University, Civil Engineering</li> 
+      <li>Gansu Union University, Civil Engineering</li>
     </ul>
 </div>
-  
+
    <div id="div2" class="targetDiv" style="display: none">
     <h2 class="brname">Mingyu Mao</h2>
      <ul>
@@ -168,10 +121,10 @@
       <li>10+ years teaching experience in MLCCC Summer Camp</li>
       <li>Joined MLCCC in 2006 as Chinese language Instructor</li>
       <li>Southeast University Medical School, Bachelor of Medicine</li>
-             
+
     </ul>
   </div>
-  
+
   <div id="div3" class="targetDiv" style="display: none">
     <h2 class="brname">Liping Wang</h2>
      <ul >
@@ -189,14 +142,14 @@
       <li>East China University of Science and Technology, BS in Chemical Engineering</li>
      </ul>
    </div>
-   
+
     </div>
   </div>
  </div>
  </div>
 </div>
 </section>
-      
+
       <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
@@ -207,69 +160,39 @@
           </div>
         </div>
       </section>
-       <footer class="probootstrap-footer probootstrap-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="probootstrap-footer-widget">
-                <h3>About The School</h3>
-                <p>Serving children and adults (ages 3 and up), the MLCCC Weekend School provides a rich assortment of language instructions, cultural classes and various clubs that support attendees' educational, personal, and career goals. </p>
-                <h3>Social</h3>
-                <ul class="probootstrap-footer-social">
-                  <li><a href="#"><i class="icon-twitter"></i></a></li>
-                  <li><a href="#"><i class="icon-facebook"></i></a></li>
-                  <li><a href="#"><i class="icon-github"></i></a></li>
-                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                  <li><a href="#"><i class="icon-youtube"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 col-md-push-1">
-              <div class="probootstrap-footer-widget">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Program</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Registration</a></li>
-                  <li><a href="#">About US</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Log In</a></li>      
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="probootstrap-footer-widget">
-                <h3>Contact Info</h3>
-                <ul class="probootstrap-contact-info">
-                  <li><i class="icon-location2"></i> <span>Great Valley High School in Malvern,PA(225 N. Phoneixville Pike,Malvern,PA 19355</span></li>
-                  <li><i class="icon-mail"></i><span>info@mlccc.org</span></li>
-                  <li><i class="icon-phone2"></i><span>610-909-6094</span></li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-          <!-- END row -->
-
-        </div>
+     <footer  class="probootstrap-footer probootstrap-bg">
         <div class="probootstrap-copyright">
           <div class="container">
             <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>225 Phoenixville Pike, Malvern, PA 19355</span>
+              <span><i class="icon-phone2"></i>+1-610-909-6094</span>
+              <span><i class="icon-mail"><a href="mailto:info@mlccc.org" style="font-size:15px;"> info@mlccc.org </a></i></span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+            <div class="row">
               <div class="col-md-8 text-left">
-                <p>&copy; 2019 <a href="https://uicookies.com/">mlccc.org</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://uicookies.com/">mlccc.org</a></p>
+                <p>&copy; 2019 <a href="index.html">mlccc.org</a>. All Rights Reserved. Designed &amp; Developed with by <a href="index.html">mlccc.org</a></p>
               </div>
               <div class="col-md-4 probootstrap-back-to-top">
-                <!--<p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>-->
+                <p><a href="index.html" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+</footer>
+
 
     </div>
     <!-- END wrapper -->
-    
+
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
@@ -278,14 +201,14 @@
     $(function() {
         $('.showSingle').click(function(){
         $('.targetDiv').hide();
-            
+
     $('#div'+jQuery(this).attr('target')).show();     $('#tap'+jQuery(this).attr('target')).show(); $(this).addClass('active').siblings().removeClass('active');
     });
 });
 </script>
-  
- 
-   
-      
+
+
+
+
   </body>
 </html>
