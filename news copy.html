@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <!-- icon-->
-     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6733bcf554.js" crossorigin="anonymous"></script>
+
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -25,12 +20,21 @@
   </head>
   <body>
 
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
 
-     <div id="wrapper" class="probootstrap-page-wrapper">
+    <div class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
-     <nav class="navbar navbar-default probootstrap-navbar navbar-fixed-top">
-        <div class="container header-container">
-          <div class="navbar-header clearfix">
+       <nav class="navbar navbar-default probootstrap-navbar sticky-top">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -39,14 +43,51 @@
             </button>
             <a class="navbar-brand" href="index.html" title="mainPage"></a>
           </div>
+
           <div id="navbar-collapse" class="navbar-collapse collapse">
-            <ul id="crossx" class="nav navbold navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="program.html" class="dropdown-toggle">Weekend School</a></li>
               <li><a href="camps.html">Summer Camp</a></li>
-              <li><a href="community.html">Community</a></li>
-              <li> <a href="about.html">About Us</a></li>
-              <li><a href="support.html">Support Us</a></li>
+              <li class="dropdown">
+                 <a href="community.html" class="dropdown-toggle">Community</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Chinese New Year Gala</a></li>
+                  <li><a href=#>Clubs</a></li>
+                  <li><a href="#">Cultural Presentation</a></li>
+                  <li><a href="#">Travel Visa</a></li>
+                  <li><a href="#">Tutoring</a></li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Volunteer</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Teacher's Assistant</a></li>
+                      <li><a href="#">President's Volunteer Service Award</a></li>
+                    </ul>
+                  </li>
+                </ul>     
+              </li>
+              <!--<li><a href="https://mlcccadmin.herokuapp.com/#/registration" target="_blank">Registration</a></li>-->
+              <li class="dropdown">
+              <a href="history.html" class="dropdown-toggle">About Us</a>
+              <ul class="dropdown-menu">
+                  <li><a href="history.html">History</a></li>
+                  <li><a href="board.html">Board of Directors</a></li>
+                  <li><a href="staffs.html">Staff</a></li>
+                  <li><a href="#">PTO</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#">FAQ?</a></li>
+              </ul>
+              </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Support Us</a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Donation</a></li>
+                  <li><a href="#">Foundations</a></li>
+              </ul>      
+              </li>
               <li>
                  <a href="https://mlcccadmin.herokuapp.com" target="_blank" >Login</a>
               </li> 
@@ -72,9 +113,7 @@
               <div class="row probootstrap-gutter0">
                 <div class="col-md-2" id="probootstrap-sidebar">
                   <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
-                  <div class="expandableCollapsibleDiv">
-                       <b class="red">2019-2020</b>
-                      <img class="arrow-news" src="img/up-arrow.png" alt="">
+                   <div class="text-uppercase probootstrap-uppercase red"><b>2019-2020</b></div>
                     <ul class="probootstrap-side-menu">
                       <li class="showSingle" target="1">2019-09-08</li>
                       <li lass="showSingle" target="2">2019-09-15</li>
@@ -106,44 +145,7 @@
                       <li>2020-03-29</li>
                       <li>2020-04-05</li>              
                     </ul>
-                      </div>
-                    <div class="expandableCollapsibleDiv">
-                     <b class="red">2018-2019</b>
-                     <img class="arrow-news" src="img/up-arrow.png" alt="">
-
-                     <ul class="probootstrap-side-menu">
-                      <li class="showSingle" target="1">2019-09-08</li>
-                      <li lass="showSingle" target="2">2019-09-15</li>
-                      <li lass="showSingle" target="3">2019-09-22</li>
-                      <li>2019-09-29</li>
-                      <li>2019-10-06</li>
-                      <li>2019-10-13</li>
-                      <li>2019-10-20</li>
-                      <li>2019-10-27</li>
-                      <li>2019-11-03</li>
-                      <li>2019-11-10</li>
-                      <li>2019-11-17</li>
-                      <li>2019-11-24</li>
-                      <li>2019-12-01</li>
-                      <li>2019-12-08</li>
-                      <li>2019-12-15</li>
-                      <li>2019-12-22</li>
-                      <li>2019-12-29</li>
-                      <li>2020-01-05</li>
-                      <li>2020-01-19</li>
-                      <li>2020-01-26</li>
-                      <li>2020-02-02</li>
-                      <li>2020-02-09</li>
-                      <li>2020-02-16</li>
-                      <li>2020-02-23</li>
-                      <li>2020-03-01</li>
-                      <li>2020-03-15</li>
-                      <li>2020-03-22</li>
-                      <li>2020-03-29</li>
-                      <li>2020-04-05</li>
-                    </ul>
                   </div>
-                 </div>
                 </div>
                 <div class="col-md-9 col-md-push-1  probootstrap-animate targetDiv" id="includedContent">
                 
@@ -164,8 +166,8 @@
           </div>
         </div>
       </section>
-      </div><!--end page wraper-->
 
+      </div><!--end page wraper-->
       <footer  class="probootstrap-footer probootstrap-bg">
         <div class="probootstrap-copyright">
           <div class="container">
@@ -173,7 +175,7 @@
             <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
               <span><i class="icon-location2"></i>225 Phoenixville Pike, Malvern, PA 19355</span>
               <span><i class="icon-phone2"></i>+1-610-909-6094</span>
-              <span><i class="icon-mail"><a href="mailto:info@mlccc.org" style="font-size:15px;"> info@mlccc.org </a></i></span>
+              <span><i class="icon-mail"></i>info@mlccc.org</span>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
               <ul>
@@ -185,7 +187,7 @@
           </div>
             <div class="row">
               <div class="col-md-8 text-left">
-                <p>&copy; 2019 <a href="#">mlccc.org</a>. All Rights Reserved. Designed &amp; Developed with by <a href="#">mlccc.org</a></p>
+                <p>&copy; 2019 <a href="https://uicookies.com/">mlccc.org</a>. All Rights Reserved. Designed &amp; Developed with by <a href="https://uicookies.com/">mlccc.org</a></p>
               </div>
               <div class="col-md-4 probootstrap-back-to-top">
                 <p><a href="index.html" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
@@ -193,23 +195,7 @@
             </div>
           </div>
         </div>
-    </footer>
-
-    <script>
-
-$(document).ready(function(){
-  $("#probootstrap-sidebar").scroll(function(){
-      $("#hamburger").next().slideDown();
-
-  }else{
-
-        $("#hamburger").next().slideDown();
-}
-                  )}
-
-
-
-    </script>
+      </footer>
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -23,9 +23,13 @@ body {
   line-height: 20px;
   font-size: 14px;
   font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width:100%;
 }
 #wrapper{
   background: url(/img/bodybg.jpg) repeat;
+
 }
 .navpink{
      background: url(/img/bodybg.jpg) repeat;
@@ -180,7 +184,12 @@ a:hover, a:focus, a:active {
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
+@media only screen and (max-width: 768px) {
+    .probootstrap-sidebar-inner{
+        width: auto;
 
+    }
+}
 .probootstrap-side-menu {
   padding: 0;
   margin:0;
@@ -193,6 +202,7 @@ a:hover, a:focus, a:active {
     color: red;
     text-align: center;
     font-weight: bold;
+
   }
 }
 
@@ -221,6 +231,7 @@ a:hover, a:focus, a:active {
 @media screen and (max-width: 768px) {
   .probootstrap-header-top {
     display: none;
+
   }
   .probootstrap-header-top.active {
     display: block;
@@ -293,6 +304,7 @@ a:hover, a:focus, a:active {
   background: #ffffff;
   -webkit-transition: .3s all;
   transition: .3s all;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1036,6 +1048,19 @@ a:hover, a:focus, a:active {
 
 .probootstrap-section.probootstrap-section-colored {
   background:rgb(237, 65, 65);
+  height: 250px;
+}
+@media only screen and (min-width: 992px) {
+    .probootstrap-section.probootstrap-section-colored{
+        height: 280px;
+    }
+
+}
+@media only screen and (max-width:480px) {
+    .probootstrap-section.probootstrap-section-colored{
+        height: 150px;
+    }
+
 }
 
 .probootstrap-section.probootstrap-section-colored .section-heading h2 {
