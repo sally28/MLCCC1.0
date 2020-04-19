@@ -113,11 +113,11 @@ p, ul, ol {
 a {
   -webkit-transition: .3s all;
   transition: .3s all;
-  color: #6a41ed;
+  color: black;
 }
 
 a:hover, a:focus, a:active {
-  color: #582aeb;
+  color: red;
   text-decoration: none;
 }
 
@@ -1048,7 +1048,9 @@ a:hover, a:focus, a:active {
 
 .probootstrap-section.probootstrap-section-colored {
   background:rgb(237, 65, 65);
-  height: 250px;
+ /* background-image: url("/img/middleSection.jpeg");*/
+  height: 320px !important;
+
 }
 @media only screen and (min-width: 992px) {
     .probootstrap-section.probootstrap-section-colored{
@@ -1064,7 +1066,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section.probootstrap-section-colored .section-heading h2 {
-  color: white;
+  color: red;
 }
 
 .probootstrap-section.probootstrap-section-colored .section-heading p {
@@ -3345,3 +3347,5 @@ a {
 #probootstrap-sidebar-tworow {
     width: 200px;
 }
+
+
