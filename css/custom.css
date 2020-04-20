@@ -300,10 +300,14 @@ img.arrow{
 }
 
 
-.probootstrap-section.probootstrap-section-colored.section-img1 {
+.section-img1 {
     background-image: url(/img/section-bk-img1.jpg) !important;
 }
-
+@media(max-width:580px){
+    .section-img1{
+        background-image: url(/img/section-bk-img1-small.jpg)!important;
+    }
+}
 
 
 .section-img2 {
@@ -312,6 +316,11 @@ img.arrow{
 
 .section-img3 {
     background-image: url(/img/section-bk-img2.jpg)!important;
+}
+@media(max-width:580px){
+    .section-img3{
+        background-image: url(/img/section-bk-img2-small.jpg)!important;
+    }
 }
 
 h2.middle-section-heading {
@@ -324,5 +333,11 @@ h2.middle-section-heading {
 .section-img4 {
     background-image: url(/img/section-bk-img3.png)!important;
 
+}
+
+@media(max-width:580px){
+    .section-img4{
+        background-image: url(/img/section-bk-img3-small.png)!important;
+    }
 
 }
