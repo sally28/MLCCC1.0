@@ -55,7 +55,7 @@
         </div>
       </nav>
       
-      <section class="probootstrap-section probootstrap-section-colored">
+      <section class="probootstrap-section probootstrap-section-colored section-img4">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-left section-heading probootstrap-animate">
@@ -70,17 +70,17 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row probootstrap-gutter0">
-                <div class="col-md-2" id="probootstrap-sidebar">
+                <div class="col-md-3" id="probootstrap-sidebar">
                   <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
                   <div class="expandableCollapsibleDiv">
                        <b class="red">2019-2020</b>
                       <img class="arrow-news" src="img/up-arrow.png" alt="">
                     <ul class="probootstrap-side-menu">
-                      <li class="showSingle" target="1">2019-09-08</li>
-                      <li lass="showSingle" target="2">2019-09-15</li>
-                      <li lass="showSingle" target="3">2019-09-22</li>
-                      <li>2019-09-29</li>
-                      <li>2019-10-06</li>
+                      <li class="newsingle" target="908">2019-09-08</li>
+                      <li class="newsingle" target="915">2019-09-15</li>
+                      <li class="newsingle" target="922">2019-09-22</li>
+                      <li class="newsingle" target="929">2019-09-29</li>
+                      <li class="newsingle" target="419">2019-10-06</li>
                       <li>2019-10-13</li>
                       <li>2019-10-20</li>
                       <li>2019-10-27</li>
@@ -106,11 +106,11 @@
                       <li>2020-03-29</li>
                       <li>2020-04-05</li>              
                     </ul>
-                      </div>
+                    <br><br><br>
+                    </div>
                     <div class="expandableCollapsibleDiv">
                      <b class="red">2018-2019</b>
                      <img class="arrow-news" src="img/up-arrow.png" alt="">
-
                      <ul class="probootstrap-side-menu">
                       <li class="showSingle" target="1">2019-09-08</li>
                       <li lass="showSingle" target="2">2019-09-15</li>
@@ -145,8 +145,14 @@
                   </div>
                  </div>
                 </div>
-                <div class="col-md-9 col-md-push-1  probootstrap-animate targetDiv" id="includedContent">
-                
+                <div id="includedContent" class="col-md-9 col-md-push-1  probootstrap-animate">
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vTXwcnZFXtwYJhjaarAc9CjSFyawa3IDHyioC8ef49N_pROBXNoNl98UlPuYovndb6twniKThUrEySc/pub?embedded=true" height="800" width="800"></iframe>
+                <!--<div id="div1" class="targetDiv" style="display: none">
+
+                </div>
+                <div id="div2" class="targetDiv" style="display: none">
+
+                </div>-->
                 </div><!-- end col-md-9-->
           </div>
          </div>
@@ -198,14 +204,13 @@
     <script>
 
 $(document).ready(function(){
-  $("#probootstrap-sidebar").scroll(function(){
+   /* if$("#probootstrap-sidebar").scroll(function(){
       $("#hamburger").next().slideDown();
-
-  }else{
-
+    }else{
         $("#hamburger").next().slideDown();
-}
-                  )}
+    }
+                  );*/
+        });
 
 
 
@@ -214,6 +219,7 @@ $(document).ready(function(){
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+
 
   </body>
 </html>
