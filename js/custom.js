@@ -1,16 +1,14 @@
 jQuery(document).ready(function() {
 	
 	"use strict";
-    //$("#includedContent").load("newsContent.html");
-    //$("#includedContent").load("newsContent915.html");
-    //$("#includedContent").load("newsContent908.html");
+    // newsletter
      $('.newsingle').click(function(){
          var targetId = this.getAttribute('target');
          var fileName = "newsletter/newsContent"+targetId+".html";
          $("#includedContent").load(fileName);
-        /*$('.targetDiv').hide();
+        $('.targetDiv').hide();
         $('#includedContent'+jQuery(this).attr('target')).show();
-        $(this).addClass('active').siblings().removeClass('active');*/
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
       $('.showSingle').click(function(){
