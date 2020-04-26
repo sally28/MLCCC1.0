@@ -28,7 +28,7 @@ body {
   width:100%;
 }
 #wrapper{
-  background: url(/img/bodybg.jpg) repeat;
+  background: url(/img/bodybg.jpg) repeat!important;
 
 }
 .navpink{

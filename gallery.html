@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
+    <title> MLCCC</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <meta name="description" content="mlccc website">
     <meta name="keywords" content="chinese courses, chinese classes, chinese culture,chinese school , chinese camp,">
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -19,41 +22,11 @@
     <![endif]-->
   </head>
   <body>
-
-  <div class="probootstrap-search" id="probootstrap-search">
-      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
-      <form action="#">
-        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
-      </form>
-    </div>
-    
-    <div class="probootstrap-page-wrapper">
+    <div id="wrapper" class="probootstrap-page-wrapper">
       <!-- Fixed navbar -->
-      
-        <div class="probootstrap-header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
-              <span><i class="icon-location2"></i>225 Phoenixville Pike, Malvern, PA 19355</span>
-              <span><i class="icon-phone2"></i>+1-610-909-6094</span>
-              <span><i class="icon-mail"></i>info@mlccc.org</span>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
-              <ul>
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook2"></i></a></li>
-                <li><a href="#"><i class="icon-instagram2"></i></a></li>
-                <li><a href="#"><i class="icon-youtube"></i></a></li>
-                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
- <nav class="navbar navbar-default probootstrap-navbar">
-        <div class="container">
-          <div class="navbar-header">
+     <nav class="navbar navbar-default probootstrap-navbar navbar-fixed-top">
+        <div class="container header-container">
+          <div class="navbar-header clearfix">
             <div class="btn-more js-btn-more visible-xs">
               <a href="#"><i class="icon-dots-three-vertical "></i></a>
             </div>
@@ -65,48 +38,27 @@
             </button>
             <a class="navbar-brand" href="index.html" title="mainPage"></a>
           </div>
-
           <div id="navbar-collapse" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="dropdown">
-                 <a href="program.html" class="dropdown-toggle">Program</a>
-                <ul class="dropdown-menu">
-                  <li><a href="program.html">Weekend School</a></li>
-                  <li><a href="camps.html">Summer Camps </a></li>
-                  <li><a href="specialProgram.html">Special Program</a></li>
-                </ul>     
-              </li>
-              <li class="dropdown">
-                 <a href="news.html" class="dropdown-toggle">Newsletter</a>
-                <ul class="dropdown-menu">
-                  <li><a href="press.html">Press</a></li>
-                </ul>     
-              </li>      
-               <li><a href="gallery.html">Gallary</a></li>
-               <li><a href="https://mlcccadmin.herokuapp.com/#/registration" target="_blank">Registration</a></li>
-              <li class="dropdown">
-              <a href="history.html" class="dropdown-toggle">About Us</a>
-              <ul class="dropdown-menu">
-                  <li><a href="history.html">History</a></li>
-                  <li><a href="board.html">Board of Directors</a></li>
-                  <li><a href="staffs.html">Staffs</a></li>
-              </ul>      
-              </li> 
-              <li><a href="contact.html">Contact</a></li>
+            <ul id="crossx" class="nav navbold navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="program.html" class="dropdown-toggle">Weekend School</a></li>
+              <li><a href="camps.html">Summer Camp</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li> <a href="about.html">About Us</a></li>
+              <li><a href="support.html">Support Us</a></li>
               <li>
                  <a href="https://mlcccadmin.herokuapp.com" target="_blank" >Login</a>
-              </li> 
+              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="probootstrap-section probootstrap-section-colored">
+     <section class="probootstrap-section probootstrap-section-colored section-img2">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-left section-heading probootstrap-animate mb0">
-              <h1 class="at-item">School Gallery</h1>
+            <div class="col-md-12 text-left section-heading probootstrap-animate ctt-container">
+             <!-- <h1>MLCCC Community</h1>-->
             </div>
           </div>
         </div>
@@ -123,19 +75,19 @@
               <div class="probootstrap-gallery">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="grid-item probootstrap-animate">
                   <a href="galmg/gal_img_full_1.jpg" itemprop="contentUrl" data-size="1000x632">
-                    <img src="galmg/gal_img_sm_1.jpg" itemprop="thumbnail" alt="Free Bootstrap Template by uicookies.com" />
+                    <img src="galmg/gal_img_sm_1.jpg" itemprop="thumbnail" alt="The Frist Day" />
                   </a>
                     <figcaption itemprop="caption description"><em class="red"><font size="5">School First Day</font></em></figcaption>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="grid-item probootstrap-animate">
                   <a href="galmg/gal_img_full_2.jpg" itemprop="contentUrl" data-size="1000x632">
-                    <img src="galmg/gal_img_sm_2.jpg" itemprop="thumbnail" alt="Free Bootstrap Template by uicookies.com" />
+                    <img src="galmg/gal_img_sm_2.jpg" itemprop="thumbnail" alt="The Frist Day" />
                   </a>
                   <figcaption itemprop="caption description"><em class="red"><font size="5">School First Day</font></em></figcaption>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="grid-item probootstrap-animate">
                   <a href="galmg/gal_img_full_3.jpg" itemprop="contentUrl" data-size="1000x632">
-                    <img src="galmg/gal_img_sm_3.jpg" itemprop="thumbnail" alt="Free Bootstrap Template by uicookies.com" />
+                    <img src="galmg/gal_img_sm_3.jpg" itemprop="thumbnail" alt="The Frist Day" />
                   </a>
                   <figcaption itemprop="caption description"><em class="red"><font size="5">AP Class</font></em></figcaption>
                 </figure>
