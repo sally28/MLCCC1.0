@@ -1939,8 +1939,9 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-gallery figure figcaption {
-  display: none;
-    color: red;
+  /*display: none;*/
+    color: black;
+    font-size: 15px !important;
 }
 
 .probootstrap-gallery img {
