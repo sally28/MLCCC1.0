@@ -341,3 +341,7 @@ h2.middle-section-heading {
     }
 
 }
+
+.sidebar {
+    margin-top: -200px!important!;
+}
