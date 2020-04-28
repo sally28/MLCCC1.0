@@ -1940,7 +1940,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-gallery figure figcaption {
   /*display: none;*/
-    color: black;
+    color: coral;
     font-size: 15px !important;
 }
 
