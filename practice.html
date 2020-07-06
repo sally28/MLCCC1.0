@@ -10,18 +10,20 @@
 </head>
 
 <body>
-  <input type="text" id="myInput" value="test">
-  <button id="test">test</button>
-  <div id="firstDiv">some text</div>
-
+  <p>Guess what is my favorite food?</p>
+  <input type="text " id="test">
+  <button id="button1">submit</button>
 
   <script>
-    var newText= document.getElementById("myInput").value;
-    document.getElementById('test').onclick=function(){
-        newText= document.getElementById("myInput").value;
-        document.getElementById('firstDiv').innerHTML= newText;
-    }
-
+   document.getElementById('button1').onclick=function(){
+       var myArray = ['pizza','water'];
+       var myArray = myArray.length,temporar
+       if (myArray==document.getElementById('test').value){
+           alert('it is correct');
+       }else{
+           alert("it's wrong, my food is"+myArray[0]);
+       }
+   }
 
  </script>
 
