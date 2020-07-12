@@ -1,0 +1,17 @@
+{
+    "name": "mlccc/web",
+    "description": "This is MLCCC web page",
+    "authors": [
+        {
+            "name": "Sally Chen",
+            "email": "mlcccwndschool@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.7.0"
+        "ext-mbstring": "*",
+        "slim/slim": "2.4.3",
+        "shark/simple_html_dom": "dev-master"
+    }
+}
