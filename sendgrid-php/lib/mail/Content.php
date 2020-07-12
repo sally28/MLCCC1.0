@@ -78,7 +78,8 @@ class Content implements \JsonSerializable
         if (!is_string($value)) {
             throw new TypeException('$value must be of type string');
         }
-        $this->value = mb_convert_encoding($value, 'UTF-8', 'UTF-8');
+        //$this->value = mb_convert_encoding($value, 'UTF-8', 'UTF-8');
+        $this->value = $value;
     }
 
     /**
