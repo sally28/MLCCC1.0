@@ -4,51 +4,68 @@
 //use PHPMailer\PHPMailer;
 //use phpmailer\SMTP;
 //use phpmailer\Exception;
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+//require 'sendgrid-php/sendgrid-php.php';
+require 'sendgrid-php/vendor/autoload.php';
+$API_KEY ="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";
+//echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+//echo "sendgrid.env" >> .gitignore
+//source ./sendgrid.env
+//require 'phpmailer/SMTP.php';
+//require 'phpmailer/Exception.php';
 
 /* Load Composer's autoloader
 require 'vendor/autoload.php';*/
 
 // Instantiation and passing `true` enables exceptions
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+//$mail = new PHPMailer\PHPMailer\PHPMailer();
 
+if(isset($_POST['submit']))
+{
+     $name = $_POST['name'];
+     $email_id = $_POST['email'];
+     $subject = $_POST['subject'];
+     $message = $_POST['message'];
+
+     $email = new \SendGrid\Mail\Mail();
+//$email->setFrom($email_id,$name);
+//$email->setSubject($subject);
+//$email->addTo("mlcccwndschool@gmail.com", "mlcccwnd");
+//$email->addContent("text/plain", $message);
+ //   $email = new \SendGrid\Mail\Mail();
+$email->setFrom("mlcccwndschool@gmail.com", "MLCCC Web");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("mlcccwndschool@gmail.com", "mlcccwnd");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+
+
+/*$email->addContent
+(  "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+ )*/;
+
+$sendgrid = new \SendGrid($API_KEY);
+    /*if($sendgrid->send($email));
+    {
+        echo "Email sent successfully.";
+        $result = "Email sent.";
+    }*/
 try {
-    //Server settings
-   // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-    $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'mlccccamp@gmail.com';                     // SMTP username
-    $mail->Password   = 'zhongwen160';                               // SMTP password
-    $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
-    //Recipients
-    $mail->setFrom($_POST['email'], $_POST['name']);
-    // $mail->addAddress('info@gmail.com', 'MLCCC Admin');     // Add a recipient
-    $mail->addAddress('mlcccwndschool@gmail.com');               // Name is optional
-    $mail->addReplyTo($_POST['email']);
-    //$mail->addReplyTo($_POST['inputEmail'], $_POST['inputName'])；
-     //$mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
-
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = $_POST['subject'];
-    $mail->Body    = $_POST['message'];
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-    $mail->send();
-    echo 'Message has been sent';
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+            $result = "Email sent.";
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+   /* 403 Array ( [0] => HTTP/1.1 403 Forbidden [1] => Server: nginx [2] => Date: Sun, 12 Jul 2020 15:04:23 GMT [3] => Content-Type: application/json [4] => Content-Length: 281 [5] => Connection: keep-alive [6] => Access-Control-Allow-Origin: https://sendgrid.api-docs.io [7] => Access-Control-Allow-Methods: POST [8] => Access-Control-Allow-Headers: Authorization, Content-Type, On-behalf-of, x-sg-elas-acl [9] => Access-Control-Max-Age: 600 [10] => X-No-CORS-Reason: https://sendgrid.com/docs/Classroom/Basics/API/cors.html [11] => [12] => ) {"errors":[{"message":"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements","field":"from","help":null}]}*/
+
+}
+
 }
 
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
