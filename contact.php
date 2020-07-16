@@ -56,7 +56,6 @@ try {
             $result = "Email sent.";
 } catch (Exception $e) {
     echo 'Caught exception: '. $e->getMessage() ."\n";
-   /* 403 Array ( [0] => HTTP/1.1 403 Forbidden [1] => Server: nginx [2] => Date: Sun, 12 Jul 2020 15:04:23 GMT [3] => Content-Type: application/json [4] => Content-Length: 281 [5] => Connection: keep-alive [6] => Access-Control-Allow-Origin: https://sendgrid.api-docs.io [7] => Access-Control-Allow-Methods: POST [8] => Access-Control-Allow-Headers: Authorization, Content-Type, On-behalf-of, x-sg-elas-acl [9] => Access-Control-Max-Age: 600 [10] => X-No-CORS-Reason: https://sendgrid.com/docs/Classroom/Basics/API/cors.html [11] => [12] => ) {"errors":[{"message":"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements","field":"from","help":null}]}*/
 
 }
 
