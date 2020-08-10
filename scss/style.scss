@@ -114,9 +114,9 @@ a {
 		font-size: 16px;
 		
 		&.active {
-			color: $brand-black;
+			color: blue;
 			a {
-				color: $brand-black;
+				color: red;
 			}
 		}
 	}
