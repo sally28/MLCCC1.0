@@ -3328,8 +3328,8 @@ ul.probootstrap-side-menu li.active{
 }
 
 
-a {
-    
+a.loginlink {
+  color: red;
 }
 
 .underline {
