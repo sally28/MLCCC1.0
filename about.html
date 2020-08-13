@@ -335,7 +335,7 @@
           <div class="row">
             <div class="col-md-12">
               <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Enroll Class Now!</h2>
-              <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
+              <a href="https://mlcccadmin.herokuapp.com" target="_blank" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
             </div>
           </div>
         </div>
@@ -381,8 +381,9 @@
     $(function() {
         $('.showSingle').click(function(){
         $('.targetDiv').hide();
-
-    $('#div'+jQuery(this).attr('target')).show();     $('#tap'+jQuery(this).attr('target')).show(); $(this).addClass('active').siblings().removeClass('active');
+        $('#div'+jQuery(this).attr('target')).show();
+        $('#tap'+jQuery(this).attr('target')).show();
+        $(this).addClass('active').siblings().removeClass('active');
     });
 });
 </script>

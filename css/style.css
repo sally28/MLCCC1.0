@@ -3329,7 +3329,7 @@ ul.probootstrap-side-menu li.active{
 
 
 a.loginlink {
-  color: red;
+  color: brown;
 }
 
 .underline {
@@ -3359,3 +3359,11 @@ a.loginlink {
 }
 
 
+
+.loglink {
+    color: brown !important;
+}
+
+.brown {
+    color: brown;
+}
