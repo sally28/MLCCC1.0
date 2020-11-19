@@ -3367,3 +3367,18 @@ a.loginlink {
 .brown {
     color: brown;
 }
+
+.homeMedia {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    height: auto;
+    transition: width 2s;
+}
+.homeMedia:hover{
+    width: 250px;
+}
+
+.vlog {
+
+}
