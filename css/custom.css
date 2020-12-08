@@ -361,6 +361,8 @@ homepage slider hight adjustment */
 }
 .nodotHomepage {
     color: gray;
+    list-style-type: none;
+
 }
 
 .name {
