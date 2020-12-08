@@ -1109,7 +1109,7 @@ ul.probootstrap-side-menu li.active{
 }
 
 .section-heading {
-  margin-bottom: 70px;
+  margin-bottom: -10px;
 }
 
 .section-heading h1 {
@@ -2844,7 +2844,7 @@ ul.probootstrap-side-menu li.active{
 
 /* Owl carousel override style */
 .owl-carousel {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .owl-carousel.border-rounded .item {
@@ -3381,4 +3381,8 @@ a.loginlink {
 
 .vlog {
 
+}
+
+.title {
+    text-align:center;
 }

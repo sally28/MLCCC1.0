@@ -18,6 +18,7 @@
 
 *,:active{
     outline: none;
+    text-align: center;
 }
 *{
     padding: 0px;
@@ -303,11 +304,13 @@ img.arrow{
 }
 
 
-.section-img1 {
-    background-image: url(/img/section-bk-img1.jpg) !important;
+
+    .section-img2 {
+    background-image: url(/img/section-bk-img1.jpg)!important;
 }
+
 @media(max-width:580px){
-    .section-img1{
+    .section-img2{
         background-image: url(/img/section-bk-img1-small.jpg)!important;
     }
 }
@@ -347,4 +350,19 @@ h2.middle-section-heading {
 
 .sidebar {
     margin-top: -200px!important!;
+}
+
+/* Verison 2
+
+homepage slider hight adjustment */
+
+.flexslider .slides img{
+    height: 420px !important;
+}
+.nodotHomepage {
+    color: gray;
+}
+
+.name {
+    text-align: center;
 }
