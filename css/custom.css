@@ -18,7 +18,7 @@
 
 *,:active{
     outline: none;
-    text-align: center;
+
 }
 *{
     padding: 0px;
@@ -367,4 +367,9 @@ homepage slider hight adjustment */
 
 .name {
     text-align: center;
+}
+
+
+.smalllist {
+    margin-left: 15px;
 }
