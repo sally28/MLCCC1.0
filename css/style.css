@@ -3330,6 +3330,9 @@ ul.probootstrap-side-menu li.active{
 a.loginlink {
   color: brown;
 }
+a.loginlink:hover{
+  text-decoration: underline;
+}
 
 .underline {
     color: red;
