@@ -3347,6 +3347,9 @@ a.loginlink:hover{
 .red {
     color: red;
 }
+a.red:hover {
+    color: blue;
+}
 
 .middle {
     text-align: center;
@@ -3387,4 +3390,8 @@ a.loginlink:hover{
 
 .title {
     text-align:center;
+}
+
+.blue {
+    color
 }
